@@ -4,6 +4,7 @@ module.exports = {
   index,
   show,
   create,
+  update,
   delete: deleteHobby
 };
 
@@ -30,6 +31,12 @@ function create(req, res){
     let hobby = new Hobby(req.body)
     hobby.save(function(err){
         res.redirect('/')
+    })
+}
+
+function update(req, res){
+    Hobby.findByIdAndUpdate(req.params.id, req.body, function(err, updatedHobby){
+        res.redirect('back')
     })
 }
 
