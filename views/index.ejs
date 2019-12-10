@@ -13,15 +13,17 @@
   <ul>
 
     <% hobbies.forEach(h => { %>
-      <li><%= h.name %> - <a href="<%= h._id %>">view details</a></li> 
+    <li><%= h.name %> - <a href="<%= h._id %>">view details</a>
+      <form action="/<%= h._id %>?_method=DELETE" method="POST">
+        <input class='btn-danger' type="submit" value="x">
+      </form>
+    </li>
     <% })%>
   </ul>
   <% } else { %>
   <p>No Hobbies Here!</p>
   <% } %>
-
   ---------------------
-
   <h3>Add New Hobby!</h3>
   <form method="POST" action="/">
     <input type="text" name="name" placeholder="hobby name">
