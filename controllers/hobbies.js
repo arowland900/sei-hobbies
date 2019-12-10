@@ -3,7 +3,8 @@ var Hobby = require('../models/hobby');
 module.exports = {
   index,
   show,
-  create
+  create,
+  delete: deleteHobby
 };
 
 function index(req,res){
@@ -27,6 +28,13 @@ function show(req, res){
 function create(req, res){
     let hobby = new Hobby(req.body)
     hobby.save(function(err){
+        res.redirect('/')
+    })
+}
+
+function deleteHobby(req, res){
+    Hobby.findByIdAndDelete(req.params.id, function(err, hobby){
+        console.log(hobby)
         res.redirect('/')
     })
 }
