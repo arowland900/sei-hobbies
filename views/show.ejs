@@ -7,17 +7,26 @@
   </head>
   <body>
       <a href="/">Back to Homepage</a>
-    <p><%= title %> for <strong><%= hobby.name %></strong></p>
-    <p><%= hobby.description %></p>
-    <form action="/<%= hobby._id %>?_method=DELETE" method="POST">
-        <input type="submit"value="delete <%= hobby.name %>">
-    </form>
+    <p><%= title %></p>
+    <ul>
+        <li>Hobby Name: <strong><%= hobby.name %></strong></li>
+        <li>Hobby Description: <%= hobby.description %></li>
+    </ul>
+    Update Hobby Below!
     <form action="/<%= hobby._id %>?_method=PUT" method="POST">
         <input type="text" name="name" placeholder='<%= hobby.name %>'>
         <br>
         <textarea type="text" name="description" placeholder='<%= hobby.description %>'></textarea>
         <br>
         <input type="submit" value="Update Hobby">
+    </form>
+    <br><br>
+    Delete Hobby?
+    <br>
+    ----------
+    
+    <form action="/<%= hobby._id %>?_method=DELETE" method="POST">
+        <input class='btn-danger' type="submit"value="delete <%= hobby.name %>">
     </form>
   </body>
 </html>
