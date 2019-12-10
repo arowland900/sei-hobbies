@@ -30,11 +30,8 @@
 			- delete the hobby (method-override)
 				- after successfully deleting, redirect back to the `index.ejs` page 
 
--
-
-## Below are Screenshots of the working application
 
 
-    ![index.ejs with no hobbies](public/images/img1.png)
-    ![index.ejs with hobbies](public/images/img2.png)
-    ![show.ejs](public/images/img3.png)
+	![Screenshot](https://imgur.com/y3dwQcS.png)
+	![Screenshot](https://imgur.com/wy37Zpr.png)
+	![Screenshot](https://imgur.com/bRZv3T8.png)
