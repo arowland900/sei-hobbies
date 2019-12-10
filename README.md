@@ -34,6 +34,6 @@
 
 ## Below are Screenshots of the working application:
 
-    ![index.ejs with no hobboes]('./public/images/img1')
-    ![index.ejs with hobbies]('./public/images/img2')
-    ![show.ejs]('./public/images/img3')
+    ![index.ejs with no hobbies]('public/images/img1.png')
+    ![index.ejs with hobbies]('public/images/img2.png')
+    ![show.ejs]('public/images/img3.png')
