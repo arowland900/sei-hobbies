@@ -29,3 +29,10 @@
 				- after successfully updating, redirect back to that updated hobby 
 			- delete the hobby (method-override)
 				- after successfully deleting, redirect back to the `index.ejs` page 
+
+-
+
+## Below are Screenshots of the working application:
+    [index.ejs with no hobboes]('./public/images/img1')
+    [index.ejs with hobbies]('./public/images/img2')
+    [show.ejs]('./public/images/img3')
