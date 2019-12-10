@@ -9,6 +9,7 @@ module.exports = {
 
 function index(req,res){
     Hobby.find({}, function(err, hobbies){
+        console.log("HIT!: ", hobbies)
         res.render('index', {
             title: "Hobbies Page",
             hobbies
