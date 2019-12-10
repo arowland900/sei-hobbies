@@ -5,7 +5,7 @@ var hobbyCtrl = require('../controllers/hobbies')
 /* GET home page. */
 router.get('/', hobbyCtrl.index);
 router.get('/:id', hobbyCtrl.show);
-router.post('/', hobbyCtrl.new);
+router.post('/', hobbyCtrl.create);
 router.delete('/', hobbyCtrl.delete);
 
 module.exports = router;
