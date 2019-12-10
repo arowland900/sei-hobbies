@@ -35,8 +35,16 @@ function create(req, res){
 }
 
 function update(req, res){
-    Hobby.findByIdAndUpdate(req.params.id, req.body, function(err, updatedHobby){
-        res.redirect('back')
+    Hobby.findById(req.params.id, function(err, hobby){
+        if(!req.body.description){
+            req.body.description = hobby.description
+        }
+        if(!req.body.name){
+            req.body.name = hobby.name
+        }
+        Hobby.findByIdAndUpdate(req.params.id, req.body, function(err, updatedHobby){
+            res.redirect('back')
+        })
     })
 }
 
