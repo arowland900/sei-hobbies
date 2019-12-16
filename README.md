@@ -6,7 +6,6 @@
 
 #### This assessment is meant to be quite harder than the assessment that you all passed with ease last friday ;)
 
--
 
 ### In order to pass, you will need to:
 
